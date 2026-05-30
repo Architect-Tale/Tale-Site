@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Fraunces:400,100,900);
+
+:root {
+  --border-rounding: 30px;
+  
+/* Colors */
+  --primary-dark: #242642; 
+  --primary: #668586; 
+  --primary-light: #82AEB1; 
+  --secondary-dark: #42362a; 
+  --secondary-light: #e0cbba;
+  --tertiary-dark: #9E8FB2; 
+  --tertiary-light: #e5e6f7;
+
+
+  --button-back: #554944; 
+  --button-hover-back: #412f27; 
+  --button-text: #e9e1da;
+  --button-hover-text: #ffffff;
+  
+  --list-text: var(--primary-dark);
+
+  --blue: #93C6D6; 
+}
+
+h1 {
+  color: var(--primary-dark);
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-left: 20px;
+  color: var(--list-text);
+}
+
+body {
+  background-color: var(--primary);
+  font-family: Fraunces, serif;
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.ornate {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  padding-right: 4px;
+}
+
+
+.content {
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--primary-light);
+  border-radius: var(--border-rounding);
+}
+
+.aside {
+  padding: 20px;
+  border-radius: var(--border-rounding);
+  background-color: var(--secondary-light);
+  color: var(--secondary-dark);
+  text-align: left;
+}
+
+.topic-button-container {
+  display: flex;
+  min-height: 200px;
+  background-color: var(--primary-bg-color);
+  gap: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.topic-button {
+  display: flex;
+  background-color: var(--button-back);
+  border: 3px;
+  border-color:  white;
+  border-radius: var(--border-rounding);
+  justify-content: space-evenly;
+  align-items: center;
+  transition-duration: 0.2s;
+  flex: 1;
+
+  font-size: 24px;
+  margin: 4px 2px;
+  flex: 1;
+  color: var(--button-text);
+  text-align: center;
+}
+
+.topic-button:hover {
+  background-color: var(--button-hover-back);
+  color: var(--button-hover-text);
+}
+
+a, a:visited, a:hover, a:active, a:focus {
+   color: yourColor !important;
+   text-decoration: none !important;
+   outline: none !important;
+}
